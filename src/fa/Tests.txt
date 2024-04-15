@@ -1,0 +1,96 @@
+nfa> z
+Error! Unknown command.
+nfa> add 1 2 a
+nfa> Error! No automaton.
+pre "ab"
+Error! No automaton.
+nfa> check "a"
+nfa> Error! No automaton
+d
+Error! No automaton.
+nfa> i
+nfa> Error! Wrong number of arguments.
+i -1
+Error! Only positive numbers accepted.
+nfa> i a
+nfa> Error! Could not parse number.
+i !
+Error! Could not parse number.
+nfa> i 1
+nfa> check ""
+In language.
+nfa> p ""
+""
+nfa> p "ab"
+""
+nfa> Add 1 1 a
+nfa> check "a"
+In language.
+nfa> p "ab"
+"a"
+nfa> i 4
+nfa> add 1 2 ~
+nfa> add 2 3 b
+nfa> add 3 4 a
+nfa> check "ab"
+Not in language.
+nfa> check "ba"
+In language.
+nfa> Prefix "baaaa"
+"ba"
+nfa> check ""
+Not in language.
+nfa> add 1 4 ~
+nfa> check ""
+In language.
+nfa> p "babbbb"
+"ba"
+nfa> p "c"
+""
+nfa> i 3
+nfa> add 1 2 !
+nfa> Error! Unacceptable transition.
+add -1 2 b
+Error! Unacceptable transition.
+nfa> add a b c
+nfa> Error! Could not parse number.
+add 1 b c
+Error! Could not parse number.
+nfa> add 1 2
+nfa> Error! Two numbers and one character expected.
+prefix
+Error! Wrong number of arguments.
+nfa> check
+nfa> Error! Wrong number of arguments.
+d
+nfa> add 1 2 a
+nfa> add 2 3 b
+nfa> d
+(1, 2) a
+(2, 3) b
+nfa> add 2 2 c
+nfa> d
+(1, 2) a
+(2, 2) c
+(2, 3) b
+nfa> check "ab"
+In language.
+nfa> check ab
+nfa> Error! Word must be surrounded with double quotation.
+check "ab
+Error! Word must be surrounded with double quotation.
+nfa> p "ab
+nfa> Error! Word must be surrounded by double quotation.
+check "ab12"
+Error! Word contains illegal characters.
+nfa>
+Error! Empty Input.
+nfa> i 2
+nfa> add 1 2 a
+nfa> PrEfix ""
+No prefix in language.
+nfa> prefi "a"
+"a"
+nfa> q
+
+Process finished with exit code 0
